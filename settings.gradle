@@ -1,2 +1,2 @@
 rootProject.name='ClickOnce'
-include ':app'
+include ':app',':Android_Common_Utils_API_1:common1',':Android_Common_Utils_API_14:common14'
