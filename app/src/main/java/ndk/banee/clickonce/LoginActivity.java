@@ -23,6 +23,7 @@ public class LoginActivity extends ContextActivity {
             @Override
             public void onClick(View v) {
 
+                Validation
                 ActivityUtils.startActivity(activityContext, DashboardActivity.class);
             }
         });

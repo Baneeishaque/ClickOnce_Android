@@ -12,7 +12,7 @@ android {
 
         applicationId "ndk.banee.clickonce"
 
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 29
 
         versionCode 1
