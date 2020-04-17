@@ -34,18 +34,29 @@
                 android:layout_marginLeft="@dimen/_16dp"
                 android:layout_marginTop="@dimen/_16dp"
                 android:layout_marginRight="@dimen/_16dp"
+                android:hint="@string/mobile_number"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/colorAccent"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:errorEnabled="true"
+                app:helperText="@string/enter_mobile_number"
+                app:helperTextEnabled="true"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
                 app:layout_constraintBottom_toTopOf="@id/buttonContinue"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
 
                     android:id="@+id/editTextMobileNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/mobile_number"
-                    android:inputType="phone" />
+                    android:inputType="phone"
+                    android:singleLine="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
