@@ -1,14 +1,11 @@
 package ndk.banee.clickonce;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.util.Pair;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import org.javatuples.Triplet;
+import androidx.core.util.Pair;
 
 import java.util.Objects;
 
@@ -35,7 +32,9 @@ public class LoginActivity extends ContextActivity {
 
                 if (Objects.requireNonNull(validationResult.first)) {
 
-                    Pair<Integer, EditText> secondValidationResult = ValidationUtils.indianMobileNumberCheckEditTextPairs(new Triplet[]{new Triplet<>(editTextMobileNumber, "Please Correct Your Mobile Number...", "Sorry, Currently Service is Not Available for Outside India...")}, activityContext);
+//                    Pair<Integer, EditText> secondValidationResult = ValidationUtils.indianMobileNumberCheckEditTextPairs(new Triplet[]{new Triplet<>(editTextMobileNumber, "Please Correct Your Mobile Number...", "Sorry, Currently Service is Not Available for Outside India...")}, activityContext);
+
+                    Pair<Integer, EditText> secondValidationResult = ValidationUtils.mobileNumberCheckEditTextPairs(new Pair[]{new Pair<>(editTextMobileNumber, "Please Correct Your Mobile Number...")});
 
                     if (Objects.requireNonNull(secondValidationResult.first) == 1) {
 
