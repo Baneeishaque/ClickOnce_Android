@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ClickOnce</string>
     <string name="mobile_number">Mobile Number</string>
-    <string name="_continue">Continue...</string>
+    <string name="_continue">Continue</string>
     <string name="enter_mobile_number">Enter Your Mobile Number</string>
     <string name="call">Call</string>
     <string name="search">Search</string>
@@ -9,4 +9,5 @@
     <string name="dashboard">Dashboard</string>
     <string name="search_button">Search Button</string>
     <string name="start_icon">Start Icon</string>
+    <string name="sample_mobile_number">9895204814</string>
 </resources>
