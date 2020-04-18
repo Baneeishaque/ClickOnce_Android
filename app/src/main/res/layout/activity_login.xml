@@ -35,6 +35,8 @@
                 android:layout_marginTop="@dimen/_16dp"
                 android:layout_marginRight="@dimen/_16dp"
                 android:hint="@string/mobile_number"
+                app:boxBackgroundColor="@android:color/background_light"
+                app:boxBackgroundMode="outline"
                 app:counterEnabled="true"
                 app:counterMaxLength="10"
                 app:errorEnabled="true"
