@@ -22,6 +22,13 @@ public class LoginActivity extends ContextActivity {
         setContentView(R.layout.activity_login);
 
         EditText editTextMobileNumber = findViewById(R.id.editTextMobileNumber);
+//        editTextMobileNumber.setOnKeyListener(new View.OnKeyListener() {
+//            @Override
+//            public boolean onKey(View v, int keyCode, KeyEvent event) {
+//                return false;
+//            }
+//        });
+
         Button buttonContinue = findViewById(R.id.buttonContinue);
         buttonContinue.setOnClickListener(new View.OnClickListener() {
 
