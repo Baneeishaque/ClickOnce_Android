@@ -5,12 +5,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import androidx.core.util.Pair;
-
-import java.util.Objects;
+import java.util.ArrayList;
 
 import ndk.utils_android1.ActivityUtils;
-import ndk.utils_android14.ContextActivity;
+import ndk.utils_android1.ContextActivity;
 import ndk.utils_android16.ValidationUtils;
 
 public class LoginActivity extends ContextActivity {
@@ -35,26 +33,33 @@ public class LoginActivity extends ContextActivity {
             @Override
             public void onClick(View v) {
 
-                Pair<Boolean, EditText> validationResult = ValidationUtils.nonEmptyCheckEditTextPairs(new Pair[]{new Pair<>(editTextMobileNumber, "Please Enter Your Mobile Number...")});
+//                Stream<org.javatuples.Pair<EditText, String>> stream=Stream.of(org.javatuples.Pair.with(editTextMobileNumber, "Please Enter Your Mobile Number..."));
 
-                if (Objects.requireNonNull(validationResult.first)) {
+                ArrayList<org.javatuples.Pair<EditText, String>> editTextPairs = new ArrayList<>();
+                editTextPairs.add(org.javatuples.Pair.with(editTextMobileNumber, "Please Enter Your Mobile Number..."));
+
+                org.javatuples.Pair<Boolean, EditText> validationResult = ValidationUtils.nonEmptyCheckEditTextPairs(editTextPairs);
+
+                if (validationResult.getValue0()) {
 
 //                    Pair<Integer, EditText> secondValidationResult = ValidationUtils.indianMobileNumberCheckEditTextPairs(new Triplet[]{new Triplet<>(editTextMobileNumber, "Please Correct Your Mobile Number...", "Sorry, Currently Service is Not Available for Outside India...")}, activityContext);
 
-                    Pair<Boolean, EditText> secondValidationResult = ValidationUtils.mobileNumberCheckEditTextPairs(new Pair[]{new Pair<>(editTextMobileNumber, "Please Correct Your Mobile Number...")});
+                    editTextPairs.clear();
+                    editTextPairs.add(org.javatuples.Pair.with(editTextMobileNumber, "Please Correct Your Mobile Number..."));
+                    org.javatuples.Pair<Boolean, EditText> secondValidationResult = ValidationUtils.mobileNumberCheckEditTextPairs(editTextPairs);
 
-                    if (Objects.requireNonNull(secondValidationResult.first)) {
+                    if (secondValidationResult.getValue0()) {
 
                         ActivityUtils.startActivity(activityContext, DashboardActivity.class);
 
                     } else {
 
-                        Objects.requireNonNull(secondValidationResult.second).requestFocus();
+                        secondValidationResult.getValue1().requestFocus();
                     }
 
                 } else {
 
-                    Objects.requireNonNull(validationResult.second).requestFocus();
+                    validationResult.getValue1().requestFocus();
                 }
             }
         });
