@@ -50,7 +50,7 @@ public class LoginActivity extends ContextActivity {
 
                     if (secondValidationResult.getValue0()) {
 
-                        ActivityUtils.startActivity(activityContext, DashboardActivity.class);
+                        ActivityUtils.startActivity(activityContext, DashboardFragmentActivity.class);
 
                     } else {
 

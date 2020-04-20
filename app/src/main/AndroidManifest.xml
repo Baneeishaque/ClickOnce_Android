@@ -14,7 +14,7 @@
         tools:replace="android:allowBackup">
 
         <activity
-            android:name=".DashboardActivity"
+            android:name=".DashboardFragmentActivity"
             android:label="@string/dashboard">
 
             <intent-filter>
@@ -27,6 +27,42 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/login">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".DashboardGridViewActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".DashboardRecyclerViewActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".DashboardTableActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".DashboardLayoutActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

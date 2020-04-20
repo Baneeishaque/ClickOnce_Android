@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import ndk.utils_android1.TelephonyCallActivity;
 import ndk.utils_android16.ToastUtils;
 
-public class DashboardActivity extends TelephonyCallActivity {
+public class DashboardRecyclerViewActivity extends TelephonyCallActivity {
 
     private static final String SERVICE_CONTACT_NUMBER = "9895204814";
 
@@ -18,7 +18,7 @@ public class DashboardActivity extends TelephonyCallActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_dashboard_recyclerview);
 
         Button buttonCall = findViewById(R.id.buttonCall);
         buttonCall.setOnClickListener(new View.OnClickListener() {
@@ -33,9 +33,6 @@ public class DashboardActivity extends TelephonyCallActivity {
                 }
             }
         });
-
-//        GridView gridview = findViewById(R.id.gridViewServices);
-//        gridview.setAdapter(new ButtonAdaptor(this));
 
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         float dpHeight = displayMetrics.heightPixels / displayMetrics.density;
