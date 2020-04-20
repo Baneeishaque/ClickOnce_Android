@@ -1,15 +1,14 @@
 package ndk.banee.clickonce;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import ndk.banee.clickonce.dummy.ServiceList;
 import ndk.utils_android1.TelephonyCallActivity;
 import ndk.utils_android16.ToastUtils;
 
-public class DashboardActivity extends TelephonyCallActivity {
+public class DashboardActivity extends TelephonyCallActivity implements ServicesFragment.ServiceFragmentInteractionListener {
 
     private static final String SERVICE_CONTACT_NUMBER = "9895204814";
 
@@ -32,5 +31,11 @@ public class DashboardActivity extends TelephonyCallActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onFragmentInteraction(ServiceList.ServiceItem serviceItem) {
+
+
     }
 }

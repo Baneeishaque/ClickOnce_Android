@@ -56,11 +56,26 @@
         android:id="@+id/buttonCall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_16dp"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        app:strokeColor="@color/colorPrimaryDark"
         android:text="@string/call"
+        style="?attr/materialButtonOutlinedStyle"
         android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewSearch" />
+
+    <fragment
+        android:id="@+id/fragmentServices"
+        android:name="ndk.banee.clickonce.ServicesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCall" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
