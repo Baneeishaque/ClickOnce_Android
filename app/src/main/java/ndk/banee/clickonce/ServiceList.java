@@ -3,13 +3,11 @@ package ndk.banee.clickonce;
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class ServiceList {
+class ServiceList {
 
-    public static final List<ServiceItem> serviceList = new ArrayList<>();
+    static final List<ServiceItem> serviceList = new ArrayList<>();
 
     static {
 
@@ -29,17 +27,17 @@ public class ServiceList {
 
     public static class ServiceItem {
 
-        public final String id;
+        final String name;
 
         ServiceItem(String name) {
 
-            this.id = name;
+            this.name = name;
         }
 
         @NonNull
         @Override
         public String toString() {
-            return id;
+            return name;
         }
     }
 }

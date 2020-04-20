@@ -62,10 +62,22 @@
         android:layout_marginRight="@dimen/_16dp"
         android:text="@string/call"
         android:textAllCaps="false"
+        app:cornerRadius="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewSearch"
         app:strokeColor="@color/colorPrimaryDark" />
+
+    <!--    <GridView-->
+    <!--        android:id="@+id/gridViewServices"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:numColumns="2"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/buttonCall">-->
+
+    <!--    </GridView>-->
 
     <!--    <fragment-->
     <!--        android:id="@+id/fragmentServices"-->
@@ -78,150 +90,163 @@
     <!--        app:layout_constraintRight_toRightOf="parent"-->
     <!--        app:layout_constraintTop_toBottomOf="@id/buttonCall" />-->
 
-    <TableLayout
+    <!--        <TableLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_margin="@dimen/_16dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/buttonCall">-->
+
+    <!--            <TableRow>-->
+
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS1"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s1"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS2"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s2"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS3"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s3"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS4"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s4"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS5"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s5"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS6"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s6"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS7"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s7"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS8"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s8"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS9"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s9"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS10"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="10"-->
+    <!--                    android:text="@string/s2"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--            <TableRow>-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS11"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_marginEnd="@dimen/_16dp"-->
+    <!--                    android:layout_marginRight="@dimen/_16dp"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s11"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--                <com.google.android.material.button.MaterialButton-->
+
+    <!--                    android:id="@+id/buttonS12"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_weight="1"-->
+    <!--                    android:text="@string/s12"-->
+    <!--                    android:textAllCaps="false" />-->
+
+    <!--            </TableRow>-->
+
+    <!--        </TableLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewServices"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/_16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonCall">
-
-        <TableRow>
-
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s1"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/s2"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS3"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s3"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS4"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/s4"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS5"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s5"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS6"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/s6"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS7"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s7"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS8"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/s8"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS9"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s9"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS10"
-                android:layout_height="match_parent"
-                android:layout_weight="10"
-                android:text="@string/s2"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-        <TableRow>
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS11"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_16dp"
-                android:layout_marginRight="@dimen/_16dp"
-                android:layout_weight="1"
-                android:text="@string/s11"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-
-                android:id="@+id/buttonS12"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/s12"
-                android:textAllCaps="false" />
-
-        </TableRow>
-
-    </TableLayout>
+        app:layout_constraintTop_toBottomOf="@id/buttonCall"
+        app:spanCount="2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

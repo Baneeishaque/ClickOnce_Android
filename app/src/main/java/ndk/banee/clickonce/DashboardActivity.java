@@ -1,8 +1,11 @@
 package ndk.banee.clickonce;
 
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import ndk.utils_android1.TelephonyCallActivity;
 import ndk.utils_android16.ToastUtils;
@@ -30,5 +33,18 @@ public class DashboardActivity extends TelephonyCallActivity {
                 }
             }
         });
+
+//        GridView gridview = findViewById(R.id.gridViewServices);
+//        gridview.setAdapter(new ButtonAdaptor(this));
+
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        float dpHeight = displayMetrics.heightPixels / displayMetrics.density;
+        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
+        float recyclerViewHeight = dpHeight - 16 - 56 - 16 - 16 - 36 - 16 - 16;
+        float recyclerViewWidth = dpWidth - 16 - 16;
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewServices);
+        recyclerView.setAdapter(new ServicesRecyclerViewIndependentAdapter(ServiceList.serviceList, (int) recyclerViewHeight / 6, (int) recyclerViewWidth / 2));
+
     }
 }
