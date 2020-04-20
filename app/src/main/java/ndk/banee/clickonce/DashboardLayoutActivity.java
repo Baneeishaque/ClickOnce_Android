@@ -14,7 +14,7 @@ import static ndk.banee.clickonce.R.string.decline;
 
 public class DashboardLayoutActivity extends TelephonyCallActivity {
 
-    private static final String SERVICE_CONTACT_NUMBER = "9895204814";
+    private static final String SERVICE_CONTACT_NUMBER = "9446827218";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,10 @@ public class DashboardLayoutActivity extends TelephonyCallActivity {
         });
     }
 
+    String service = "";
+
     public void buttonClick(View view) {
 
-        String service = "";
         switch (view.getId()) {
 
             case R.id.buttonS1D:
@@ -106,7 +107,22 @@ public class DashboardLayoutActivity extends TelephonyCallActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
+                        String mobileNumber = getIntent().getStringExtra("mobileNumber");
+                        if (mobileNumber != null) {
 
+                            boolean smsSendResult = ClickOnceTextLocalUtils.sendSMS(SERVICE_CONTACT_NUMBER, service + " requested on " + mobileNumber);
+                            if (smsSendResult) {
+                                ToastUtils.shortToast(activityContext, "Thanks...");
+                                ClickOnceTextLocalUtils.sendSMS(mobileNumber, "Thank you for using ClickOnce Service, Our Representative Will Reach You Soon..");
+                            } else {
+
+                                ToastUtils.shortToast(activityContext, "Try Again...");
+                            }
+
+                        } else {
+
+                            ToastUtils.shortToast(activityContext, "Data Error..");
+                        }
                     }
 
                 }).show();

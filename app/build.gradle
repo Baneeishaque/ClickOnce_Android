@@ -21,6 +21,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -80,4 +82,5 @@ dependencies {
 //    implementation project(path: ':Android_Common_Utils_API_1:common1')
     implementation project(path: ':Android_Common_Utils_API_14:common14')
     implementation project(path: ':Android_Common_Utils_API_16:common16')
+    implementation project(path: ':Java_Common_Utils')
 }

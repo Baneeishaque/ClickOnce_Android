@@ -14,8 +14,8 @@
         tools:replace="android:allowBackup">
 
         <activity
-            android:name=".DashboardFragmentActivity"
-            android:label="@string/dashboard">
+            android:name=".LoginActivity"
+            android:label="@string/login">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,8 +25,8 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/login">
+            android:name=".DashboardFragmentActivity"
+            android:label="@string/dashboard">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

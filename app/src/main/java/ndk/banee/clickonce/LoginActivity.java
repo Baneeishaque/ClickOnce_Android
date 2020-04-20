@@ -5,10 +5,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.core.util.Pair;
+
 import java.util.ArrayList;
 
-import ndk.utils_android1.ActivityUtils;
 import ndk.utils_android1.ContextActivity;
+import ndk.utils_android14.ActivityUtils;
 import ndk.utils_android16.ValidationUtils;
 
 public class LoginActivity extends ContextActivity {
@@ -50,7 +52,7 @@ public class LoginActivity extends ContextActivity {
 
                     if (secondValidationResult.getValue0()) {
 
-                        ActivityUtils.startActivity(activityContext, DashboardFragmentActivity.class);
+                        ActivityUtils.startActivityWithStringExtrasAndFinish(activityContext, DashboardLayoutActivity.class, new Pair[]{new Pair<>("mobileNumber", editTextMobileNumber.getText().toString().trim())});
 
                     } else {
 
