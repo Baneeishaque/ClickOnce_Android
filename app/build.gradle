@@ -25,12 +25,24 @@ android {
         multiDexEnabled true
     }
 
+    signingConfigs {
+
+        release {
+
+            keyAlias 'snake'
+            keyPassword '9895204814'
+            storeFile file('../keystore.jks')
+            storePassword '9895204814'
+        }
+    }
+
     buildTypes {
 
         release {
 
-            shrinkResources true
-            minifyEnabled true
+            signingConfig signingConfigs.release
+            shrinkResources false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
