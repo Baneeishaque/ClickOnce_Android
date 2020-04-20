@@ -22,4 +22,6 @@
     <string name="s10">FSSAI Registration</string>
     <string name="s11">Trust Registration</string>
     <string name="s12">Udhyog Aadhars</string>
+    <string name="decline">No</string>
+    <string name="accept">Accept</string>
 </resources>
