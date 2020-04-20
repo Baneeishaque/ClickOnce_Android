@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import ndk.banee.clickonce.dummy.ServiceList.ServiceItem;
+import ndk.banee.clickonce.ServiceList.ServiceItem;
 
 import java.util.List;
 

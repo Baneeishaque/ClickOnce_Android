@@ -10,4 +10,16 @@
     <string name="search_button">Search Button</string>
     <string name="start_icon">Start Icon</string>
     <string name="sample_mobile_number">9895204814</string>
+    <string name="s1">GST Registration</string>
+    <string name="s2">GST Filing</string>
+    <string name="s3">Income Tax Filing</string>
+    <string name="s4">Company Registration</string>
+    <string name="s5">LLP Registration</string>
+    <string name="s6">Project Report</string>
+    <string name="s7">Trademark</string>
+    <string name="s8">Partnership Deed</string>
+    <string name="s9">Import Export Code</string>
+    <string name="s10">FSSAI Registration</string>
+    <string name="s11">Trust Registration</string>
+    <string name="s12">Udhyog Aadhars</string>
 </resources>

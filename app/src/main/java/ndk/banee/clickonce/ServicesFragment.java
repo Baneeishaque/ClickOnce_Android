@@ -12,8 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ndk.banee.clickonce.dummy.ServiceList;
-import ndk.banee.clickonce.dummy.ServiceList.ServiceItem;
+import ndk.banee.clickonce.ServiceList.ServiceItem;
 
 /**
  * A fragment representing a list of Items.

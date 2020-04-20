@@ -1,4 +1,4 @@
-package ndk.banee.clickonce.dummy;
+package ndk.banee.clickonce;
 
 import androidx.annotation.NonNull;
 
